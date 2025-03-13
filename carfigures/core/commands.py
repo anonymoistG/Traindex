@@ -120,7 +120,7 @@ class Core(commands.Cog):
         """
         for _ in range(amount):
             if not car:
-                carfigure = await CarFigure.getRandom()
+                carfigure = await CarFigure.get_random()
             else:
                 try:
                     car_model = await Car.get(fullName__iexact=car.lower())
