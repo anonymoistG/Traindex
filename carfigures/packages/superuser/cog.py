@@ -525,7 +525,7 @@ class SuperUser(commands.GroupCog, group_name=appearance.sudo):
                             )
                         else:
                             self.bot.blacklisted_servers.add(server.id)
-                            await models.BlacklistedGuild.create(guild_id=server.id)
+                            await models.BlacklistedGuild.create(discord_id=server.id)
                             await interaction.response.send_message(
                                 f"{server.name} is now blacklisted.", ephemeral=True
                             )
@@ -540,7 +540,7 @@ class SuperUser(commands.GroupCog, group_name=appearance.sudo):
                                 f"{server.name} isn't blacklisted.", ephemeral=True
                             )
                         else:
-                            await models.BlacklistedGuild.filter(guild_id=server.id).delete()
+                            await models.BlacklistedGuild.filter(discord_id=server.id).delete()
                             self.bot.blacklisted_servers.remove(server.id)
                             await interaction.response.send_message(
                                 f"{server.name} is now removed from blacklist.", ephemeral=True
