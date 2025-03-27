@@ -68,10 +68,17 @@ defaultEmbedColor = "5865F2"
 [spawn-manager]
 requiredMessageRange =  [22, 55] # The required number of messages to be sent after the cooldown to spawn.
 spawnMessages = [
-    { message = "A wild carfigure has appeared!", rarity = 10 },
-    { message = "A blizzard blows in, and with it comes a carfigure!", rarity = 5 },
-    { message = "A drop hsa been spotted, and it has a carfigure inside it!", rarity = 2 },
-    { message = "Think fast chucklenutts!", rarity = 1 }
+    { message = "A wild CarFigure has appeared!", rarity = 10 },
+    { message = "A CarFigure zooms past at lightning speed!", rarity = 9 },
+    { message = "A loud honk is heard, and suddenly... a CarFigure!", rarity = 8 },
+    { message = "An explosion echoes in the distance... it's a CarFigure!", rarity = 7 },
+    { message = "The ground shakes as a CarFigure emerges from the shadows!", rarity = 6 },
+    { message = "A blizzard blows in, and with it comes a CarFigure!", rarity = 5 },
+    { message = "A mysterious portal opens... and out steps a CarFigure!", rarity = 4 },
+    { message = "Woah, is that a CarFigure?!", rarity = 3 },
+    { message = "A drop has been spotted, and it has a CarFigure inside it!", rarity = 2 },
+    { message = "Think fast chucklenuts!", rarity = 1 }
+    { message = "A CarFigure sneaks up behind you! Boo!", rarity = 0.5 },
 ]
 catchButtonMessages = [
     { message = "Catch Me!", rarity = 10 },
